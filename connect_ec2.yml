@@ -1,0 +1,8 @@
+---
+- name: Connect to EC2 instance
+  hosts: aws
+  gather_facts: True
+
+  tasks:
+   - name: Ping the EC2 instance
+     ping:
